@@ -1,7 +1,7 @@
 """
 python3 generate.py <dir to put files> <%Y-%m-%d date> <days_count> <unique emails count> <events count>
 Ex.
-python3 generate.py input 2024-09-10 30 10 2000
+python3 generate.py input 2024-09-16 15 15 500
 """
 
 
