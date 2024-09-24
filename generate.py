@@ -47,6 +47,9 @@ if __name__ == "__main__":
     emails = [generate_email() for _ in range(emails_cnt)]   # Генерация списка эл. адресов
     events_cnt = int(sys.argv[5])  # Количесвто ежедневных событий
 
+    if not os.path.exists(dirname):  # Создать директорий, если его нет
+        os.makedirs(dirname)
+
     for i in range(days_cnt):
         current_dt = dt + datetime.timedelta(days=i)  # Текущая дата
         filepath = os.path.join(dirname, f"{current_dt.strftime('%Y-%m-%d')}.csv")  # Путь/создание и имя - текущая дата
